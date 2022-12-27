@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "b14373ac-133b-40bf-b3b6-a942b997173e",
+		"name": "jaspower-customer-service stag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/customer/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "b71ac919-4da6-4fdb-9983-356d797d9924",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registerChannel\":\"1\",\r\n    \"firstName\": \"เทส\",\r\n    \"lastName\": \"ทดสอบ\",\r\n    \"province\": \"10\",\r\n    \"telNo\": \"0810000444\",\r\n    \"electricBill\": \"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jas-energy-stg.jasmine.com/jas-energy-customer/service/customer/register",
+					"protocol": "https",
+					"host": [
+						"jas-energy-stg",
+						"jasmine",
+						"com"
+					],
+					"path": [
+						"jas-energy-customer",
+						"service",
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/customer/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "b71ac919-4da6-4fdb-9983-356d797d9924",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://jas-energy-stg.jasmine.com/jas-energy-customer/service/customer/register?firstName=john",
+					"protocol": "https",
+					"host": [
+						"jas-energy-stg",
+						"jasmine",
+						"com"
+					],
+					"path": [
+						"jas-energy-customer",
+						"service",
+						"customer",
+						"register"
+					],
+					"query": [
+						{
+							"key": "registerTransactionId",
+							"value": "W2022111500001",
+							"disabled": true
+						},
+						{
+							"key": "firstName",
+							"value": "john"
+						},
+						{
+							"key": "lastName",
+							"value": "cossair",
+							"disabled": true
+						},
+						{
+							"key": "telNo",
+							"value": "0810000333",
+							"disabled": true
+						},
+						{
+							"key": "province",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/util/province",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "b71ac919-4da6-4fdb-9983-356d797d9924",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"ทดสอบ\",\r\n    \"lastName\": \"ลูกค้า2\",\r\n    \"address\": \"99/999 tester destination\",\r\n    \"building\": \"jasmine tower\",\r\n    \"moo\": \"1\",\r\n    \"soi\": \"1\",\r\n    \"road\": \"แจ้งวัฒณะ\",\r\n    \"tambol\": \"1\",\r\n    \"amphur\": \"1\",\r\n    \"province\": \"10\",\r\n    \"zipcode\": \"10200\",\r\n    \"latitude\": \"99\",\r\n    \"longitude\": \"100.2\",\r\n    \"telNo\": \"0810000001\",\r\n    \"lineId\": \"testerlineid\",\r\n    \"daytimeElectricScale\": \"10\",\r\n    \"electricBillHistory1\": \"testbill1\",\r\n    \"electricBillHistory2\": \"testbill2\",\r\n    \"electricBillHistory3\": \"testbill3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jas-energy-stg.jasmine.com/jas-energy-customer/service/util/province",
+					"protocol": "https",
+					"host": [
+						"jas-energy-stg",
+						"jasmine",
+						"com"
+					],
+					"path": [
+						"jas-energy-customer",
+						"service",
+						"util",
+						"province"
+					],
+					"query": [
+						{
+							"key": "provinceId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "provinceName",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/util/amphur",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "b71ac919-4da6-4fdb-9983-356d797d9924",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"ทดสอบ\",\r\n    \"lastName\": \"ลูกค้า2\",\r\n    \"address\": \"99/999 tester destination\",\r\n    \"building\": \"jasmine tower\",\r\n    \"moo\": \"1\",\r\n    \"soi\": \"1\",\r\n    \"road\": \"แจ้งวัฒณะ\",\r\n    \"tambol\": \"1\",\r\n    \"amphur\": \"1\",\r\n    \"province\": \"10\",\r\n    \"zipcode\": \"10200\",\r\n    \"latitude\": \"99\",\r\n    \"longitude\": \"100.2\",\r\n    \"telNo\": \"0810000001\",\r\n    \"lineId\": \"testerlineid\",\r\n    \"daytimeElectricScale\": \"10\",\r\n    \"electricBillHistory1\": \"testbill1\",\r\n    \"electricBillHistory2\": \"testbill2\",\r\n    \"electricBillHistory3\": \"testbill3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jas-energy-stg.jasmine.com/jas-energy-customer/service/util/amphur?provinceId=10&amphurId=",
+					"protocol": "https",
+					"host": [
+						"jas-energy-stg",
+						"jasmine",
+						"com"
+					],
+					"path": [
+						"jas-energy-customer",
+						"service",
+						"util",
+						"amphur"
+					],
+					"query": [
+						{
+							"key": "provinceId",
+							"value": "10"
+						},
+						{
+							"key": "amphurId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/util/tambol",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "b71ac919-4da6-4fdb-9983-356d797d9924",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"ทดสอบ\",\r\n    \"lastName\": \"ลูกค้า2\",\r\n    \"address\": \"99/999 tester destination\",\r\n    \"building\": \"jasmine tower\",\r\n    \"moo\": \"1\",\r\n    \"soi\": \"1\",\r\n    \"road\": \"แจ้งวัฒณะ\",\r\n    \"tambol\": \"1\",\r\n    \"amphur\": \"1\",\r\n    \"province\": \"10\",\r\n    \"zipcode\": \"10200\",\r\n    \"latitude\": \"99\",\r\n    \"longitude\": \"100.2\",\r\n    \"telNo\": \"0810000001\",\r\n    \"lineId\": \"testerlineid\",\r\n    \"daytimeElectricScale\": \"10\",\r\n    \"electricBillHistory1\": \"testbill1\",\r\n    \"electricBillHistory2\": \"testbill2\",\r\n    \"electricBillHistory3\": \"testbill3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jas-energy-stg.jasmine.com/jas-energy-customer/service/util/tambol?provinceId=10&amphurId=01&tambolId=",
+					"protocol": "https",
+					"host": [
+						"jas-energy-stg",
+						"jasmine",
+						"com"
+					],
+					"path": [
+						"jas-energy-customer",
+						"service",
+						"util",
+						"tambol"
+					],
+					"query": [
+						{
+							"key": "provinceId",
+							"value": "10"
+						},
+						{
+							"key": "amphurId",
+							"value": "01"
+						},
+						{
+							"key": "tambolId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
